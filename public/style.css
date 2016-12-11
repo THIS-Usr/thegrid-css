@@ -1,0 +1,78 @@
+
+body {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+div {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(58, 100%, 95%);
+  color: hsl(282, 99%, 31%);
+  border: solid 3px hsl(58, 100%, 85%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap {
+  height: 1em;
+  position: relative;
+  /* background: #f6f6f5; */
+  margin: 5px;
+}
+
+h2.centre-line {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}
+h2.centre-line:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 50%;
+  /*
+  control where the line is relative to the box
+  left: 0; box middle even both sides
+  left: 80%; box middle only right side
+  right: 80%; only -- box middle only left side
+  ---
+  reposition the box -- something like above h2.centre-line - left: 20%; (from 50%)
+  left: 80%; below
+  */
+  left: 80%;
+  /* right: 80%; */
+  z-index: -1;
+  background: #D9C6CA;
+}
+h2.centre-line span {
+  background-color: #D9C6CA;
+  /* size of box in rem originally 1rem */
+  padding: .5rem;
+  display: inline-block;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {background: #f6f6f5;}
+
+h2 {
+	margin: 5px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.4;
+  font-family: 'Oswald', sans-serif;
+
+}
