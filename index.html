@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+  <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+<style type="text/css"> 
+  html:not(.gss-ready) { opacity: 0; } 
+</style>
+<noscript> 
+  <style type="text/css"> html:not(.gss-ready) { opacity: 1; } 
+  </style> 
+</noscript>
+
+<div>
+  <span>Hello from GSS</span>
+</div>
+
+<!--GSS Constraints declaration-->
+<style type="text/gss">
+   div[width] == 150;
+   div[height] == 20;
+   div[x] == 20;
+   div[y] == 20;
+</style>
+
+
+<!-- pull in the gss engine -->
+<script src="http://rawgit.com/gss/engine/2.1.x/dist/gss.js"></script>
+ <script type="text/javascript">
+  window.engine = new GSS(document, null);
+</script>
+
+</body>
+</html>
