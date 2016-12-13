@@ -64,7 +64,12 @@ h2.centre-line span {
   display: inline-block;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* @import url('https://fonts.googleapis.com/css?family=Oswald');maybe below */
+
+@font-face {
+      font-family: "Oswald";
+      src: url("https://fonts.googleapis.com/css?family=Oswald");
+    }
 
 body {background: #f6f6f5;}
 
