@@ -3,13 +3,6 @@ does something in that all the positioning is messed.
 Why? -->
 
 
-<style type="text/gss">
-   div[width] == 150;
-   div[height] == 20;
-   div[x] == 50;
-   div[y] == 20;
-</style>
-
 <style>
 * {
   margin: 0;
